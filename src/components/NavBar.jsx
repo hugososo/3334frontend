@@ -39,8 +39,8 @@ const NavBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>3335NFT</Typography>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>3335NFT</Typography>
+          <Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>NFT Market</Typography>
+          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>NFT Market</Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button component={Link} to="/" sx={{ my: 2, color: "white", display: "block" }}>Item</Button>
             <Button component={Link} to="/profile" sx={{ my: 2, color: "white", display: "block" }}>Profile</Button>

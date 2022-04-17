@@ -9,7 +9,7 @@ import {
 const config = {
   readOnlyChainId: Localhost.chainId,
   readOnlyUrls: {
-    [Localhost.chainId]: 'http://161.81.156.141:7545/',
+    [Localhost.chainId]: 'https://kayan9896.com',
   },
 }
 

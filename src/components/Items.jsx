@@ -19,7 +19,7 @@ const Items = () => {
 
     const Nfts = useFetchMarketItems();
 
-    const provider = new ethers.providers.JsonRpcProvider("http://161.81.156.141:7545/");
+    const provider = new ethers.providers.JsonRpcProvider("https://kayan9896.com");
 
     const contract = new ethers.Contract(contractAddress, DigitalAssetsMarketABI, provider);
 
@@ -59,7 +59,9 @@ const Items = () => {
                     tokenId: i.tokenId.toNumber(),
                     seller: i.seller,
                     owner: i.owner,
-                    image: meta.data.image
+                    image: meta.data.image,
+                    name: meta.data.name,
+                    description: meta.data.description
                 }
                 return item
             }))
@@ -108,7 +110,7 @@ const Items = () => {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div">
-                                                {item.tokenId}
+                                                {item.name}
                                             </Typography>
                                             <Typography variant="body2" color="text.secondary">
                                                 {item.description}
